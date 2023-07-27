@@ -1,0 +1,9 @@
+stages:
+  - stage: Test
+    jobs:
+      - job: Test
+        pool:
+          vmImage: "ubuntu-latest"
+        continueOnError: true
+        steps:
+          - script: echo "Hello World"
